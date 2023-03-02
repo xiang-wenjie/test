@@ -1,0 +1,158 @@
+底板程序：6AQ0-17_20220531_T_H1.1_S1.1.7.hex,仪表程序：CRCP06-N1.5.4-20220607-8bcd38e4.tar.gz，已经修复。
+
+关于bug提交规范。
+主题：项目编号+精简问题现象
+描述：
+【预置条件】
+底板程序：FA80-12-20221227-T-H0.0-S4.3.hex
+仪表程序："\\192.168.11.20\云片松\云片松Linux仪表\版本管理\项目版本\CRCP01\64M\ROM\CRCP01-final-N1.5.4-202301050031-fa08cd97(mcu).tar.gz"
+901蓝牙版本：587
+正常开机，进入系统
+【操作步骤】手机连接仪表后，播放音乐
+【预期结果】歌词正常显示
+【测试结果】每一句歌词前面都有歌名
+【备注】
+附件：视问题情况，必要时附上图片、视频、手机APP日志。
+4.2、 提交bug时，注意多进行对比测试、操作步骤描述准确，方便排查定因。
+
+底板程序：FA80-12-20221227-T-H0.0-S4.3.hex
+1026C蓝牙版本：511
+901蓝牙版本：587
+仪表程序："\\192.168.11.20\云片松\云片松Linux仪表\版本管理\项目版本\CRCP01\64M\ROM\CRCP01-final-N1.5.4-202301050031-fa08cd97(mcu).tar.gz"，多次复测，未复现此问题。
+
+
+【预置条件】
+仪表程序：
+正常开机，进入系统
+【操作步骤】
+【预期结果】
+【测试结果】
+【备注】
+Xshell里输入命令：cat /sys/class/net/p2p0/address ，查看MAC地址，再用手机扫码仪表二维码，复制跳转后的地址，与命令查看的地址进行对比，MAC地址一致，则为正常。
+
+logcat-c
+
+底板程序：6AQ0-17_20220531_T_H1.1_S1.1.7.hex,仪表程序：CRCP06-N1.5.4-20220607-8bcd38e4.tar.gz，与样表的字符方向相反。
+仪表程序："\\192.168.11.20\云片松\云片松Linux仪表\版本管理\项目版本\CRCP02\20221102\CRCP02-V1.0.5-20221102034747-9d1f8e1f.tar.gz"，已修复。
+getprop
+
+
+ppthag
+PPTHAG
+
+MotorMeter-xtkj04-release.V1.0.6_202206091746.fb517aa.apk，已修复 
+
+
+
+
+100RPMx0.108
+
+APP版本:MotorMeter-xtkj04-release.V1.0.6_202206231435.69c0f6b.apk,MCU版本：mcu_v1.10-20220621-2.hex,已修复。
+
+jira密码:X88dngww@@@
+
+cat/data/tombstones/tombstone_00
+
+Cbt123
+
+ps-ef|grepqqmusic
+
+adblogcat|findstr"net.easyconn.carman.motofun">C:log22.txt
+
+logcat|grep"DashboardLayout"|grep"clear"
+
+#查看当前运行的程序
+adbshelldumpsyswindowwindows|findstrmFocusedApp
+
+#清除motofun的ODO和trip记录
+pmclearnet.easyconn.carman.motofun
+
+
+
+
+18672381103
+
+cat/data/misc/wifi/lollipop.conf
+
+
+
+java-jar bundletool-all-1.11.0.jar build-apks --bundle=C:\Users\user1\Desktop\工具\bundletool\dev-v1-(1.0.0)-08151616-zeeho-release(1).aab 
+--ks=caribitride.google.key --ks-pass=pass:carbitgoogle
+--ks-key-a1ias=google --key-pass=pass:carbitgoogle
+--device-spec=device-spec.json --output=C:\Users\user1\Desktop\工具\bundletool --overwrite
+
+java -jar bundletool-all-1.11.0.jar build-apks --bundle C:\Users\user1\Desktop\工具\bundletool\dev-v1-(1.0.0)-08151616-zeeho-release(1).aab --output C:\Users\user1\Desktop\工具\bundletool
+–-ks=caribitride.google.key
+–ks-pass=pass:carbitgoogle
+–ks-key-alias=google 
+–key-pass=pass:carbitgoogle
+--device-spec=device-spec.json
+
+# 生成apps：
+java -jar bundletool-all-1.11.0.jar build-apks --bundle=C:\Users\user1\Desktop\工具\bundletool\my.aab --output=C:\Users\user1\Desktop\工具\bundletool\my.apks
+# 安装：
+java -jar C:\Users\user1\Desktop\工具\bundletool\bundletool-all-1.11.0.jar install-apks --apks=C:\Users\user1\Desktop\工具\bundletool\my.apks
+
+java -jar bundletool
+
+keytool -genkeypair -alias aaa -keyalg RSA -keypass abcdef -keystore my.jks
+
+echo e>/data/carbit_updater.lock
+getprop carbit.instrument.version
+
+
+
+
+
+
+
+
+# +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+cat /sys/class/net/p2p0/address
+
+
+
+\\192.168.11.20\ad\版本管理\海外版\测试版本\motofun\20230105
+\\192.168.11.20\id\版本管理\00定制版本\MotoFUN-Int\1.6
+
+
+一、测试环境准备
+安卓手机：应用市场 motofun
+苹果手机：应用市场 motofun
+SOC：
+二、测试范围
+1、手机互联
+2、U盘升级
+3、模拟器数据发送
+四、测试完成，基本功能验证完毕，出包地址：
+
+
+一、测试环境准备
+安卓手机：应用市场 ZEEHO v2.2.6
+苹果手机：应用市场 ZEEHO v2.2.7
+主蓝牙固件版本：1026c-512版本
+副蓝牙固件版本 ：901-587版本
+SOC："\\192.168.11.20\云片松\云片松Linux仪表\版本管理\项目版本\CRCP01\64M\ROM\CRCP01-final-N1.5.5-202302221433-a5f15e34(mcu).tar.gz"
+二、需求变更：
+    1、修改TC灯显示规则，对接新的协议
+	2、在互联页面的下部增加时间的显示，跟随系统的12或24小时来改变
+	3、蓝牙声道切换功能
+三、测试范围
+1、蓝牙、头盔搜索连接（功能正常）
+2、手机互联(功能正常)
+3、全故障弹框(功能正常)
+4、投屏界面弹窗(功能正常)
+5、开机时间、自检动画。（功能正常）
+6、crc校验(功能正常)
+7、MCU备份升级 (功能正常)
+8、U盘升级（功能正常）
+9、IGN-ON-OFF（功能正常）
+10、氮气灯（功能正常）
+11、上电充电→转下电充电→上电充电（功能正常）
+12、背光等级设置(功能正常)
+13、TC指示灯（功能正常）
+14、产线模式：蓝牙自检、WiFi自检、蓝牙固件读取、MCU状态检查（功能正常）
+15、5s自动返回功能（功能正常）
+四、风险点
+1、短接5s,仪表不能正常启动（升级方式无法更新loader，因此还会存在短接不能启动的风险，必须烧录才能更新loader）
+功能验证完毕，出包地址：
